@@ -3,6 +3,15 @@
     "version": "Version",
     "invalid_configuration": "Invalid configuration",
     "show_warning": "Show Warning",
-    "show_error": "Show Error"
+    "show_error": "Show Error",
+    "peak": "Peak",
+    "off_peak": "Off-Peak",
+    "peak_short": "𝐏",
+    "peak_desc": "Peak fares are in effect",
+    "no_trains": "Unfortunately there are no trains at this time",
+    "duration_short": "Dur",
+    "minutes_short": "mins",
+    "missing_source_or_dest": "Config must have 'source' and 'destination'",
+    "missing_entity": "Config must have a LIRR sensor entity"
   }
 }

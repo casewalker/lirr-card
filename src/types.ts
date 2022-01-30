@@ -2,7 +2,7 @@ import { ActionConfig, LovelaceCard, LovelaceCardConfig, LovelaceCardEditor } fr
 
 declare global {
   interface HTMLElementTagNameMap {
-    'boilerplate-card-editor': LovelaceCardEditor;
+    'lirr-card-editor': LovelaceCardEditor;
     'hui-error-card': LovelaceCard;
   }
 }
@@ -14,8 +14,15 @@ export interface BoilerplateCardConfig extends LovelaceCardConfig {
   show_warning?: boolean;
   show_error?: boolean;
   test_gui?: boolean;
-  entity?: string;
+  entity: string;
   tap_action?: ActionConfig;
   hold_action?: ActionConfig;
   double_tap_action?: ActionConfig;
 }
+
+export type Departure = {
+  duration: number,
+  peak: boolean,
+  depart_time: Date,
+  depart_time_string: string
+};

@@ -267,6 +267,7 @@ export class BoilerplateCard extends LitElement {
       }
       span.no-trains {
         padding: 3px 30px 28px 0px;
+        border-left: none;
       }
       div.legend {
         font-size: x-small;

@@ -12,6 +12,7 @@
     "duration_short": "Dur",
     "minutes_short": "mins",
     "missing_source_or_dest": "Config must have 'source' and 'destination'",
-    "missing_entity": "Config must have a LIRR sensor entity"
+    "missing_entity": "Config must have a LIRR sensor entity or entities",
+    "entity_one_or_other": "Config must have only one of entity or entities, not both"
   }
 }

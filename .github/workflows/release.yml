@@ -9,16 +9,19 @@ jobs:
     name: Prepare release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
       # Build
       - name: Build the file
         run: |
-          cd /home/runner/work/lirr-card/lirr-card
           npm install
           npm run build
 
-      # Upload build file to the releas as an asset.
+      # Upload build file to the release as an asset.
+      # TODO: what? does this work? where would I want to upload?
       - name: Upload zip to release
         uses: svenstaro/upload-release-action@v1-release
 
